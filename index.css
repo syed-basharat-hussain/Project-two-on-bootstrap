@@ -1,0 +1,14 @@
+#main-heading{
+    background-image: url("images/b691fcc2-6f62-4d2c-a26e-bef675ed5882\ -\ Copy.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.head-five{
+    color: blue;
+}
+.card image{
+    height: 10px;
+}
+.carousel-inner img{
+    height: 80vh;
+}
