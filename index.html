@@ -10,8 +10,17 @@
   <style>
     * {
       font-family: 'Poppins', sans-serif;
+      margin: 0px;
+      padding: 0px;
     }
 
+    #nav{
+      margin-left : 200px;
+      font-size: 14px;
+    }
+    .nav-item{
+      margin-left: 20px;
+    }
     #BECOME:hover {
       background-color: rgb(241, 239, 239);
     }
@@ -31,13 +40,29 @@
     #wwad{
       height: 40vh;
     }
+    input::placeholder{
+      color: white;
+    }
+
+    /* form */
+    form{
+      width: 512px;
+      height: 20vh;
+      margin-left: 400px;
+    }
   </style>
 
 <body>
 
-  <nav class="navbar navbar-expand-lg bg-body-tertiary p-3 fixed-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
+
+
+  
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary p-3 fixed-top" >
+<div class="row">
+    <div class="col-12">
+          <div class="container-fluid ms-md-0" id="nav">
+      <!-- <a class="navbar-brand" href="#">Navbar</a> -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -47,27 +72,111 @@
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Donner</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contect</a>
-          </li>
-          <!-- <li class="nav-item dropdown">
+          <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown link
+              About
             </a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">Action</a></li>
               <li><a class="dropdown-item" href="#">Another action</a></li>
               <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
-          </li> -->
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Media
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contect Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Bank Details</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Doner DashBoard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Be a Sponsor</a>
+          </li>
         </ul>
       </div>
+    </div>
+    </div>
+    <hr style="width: 90%; margin-left: 200px;">
+    <div class="col-12">
+      <div class="container-fluid ms-md-0" id="nav">
+      <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              About
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Media
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contect Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Bank Details</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Doner DashBoard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Be a Sponsor</a>
+          </li>
+        </ul>
+      </div>
+    </div>  
+    </div>
     </div>
   </nav>
 
@@ -76,25 +185,29 @@
 
   <div class="container-fluid row" style="margin-top: 120px;">
     <div class="container col-12 col-md-7 order-1 order-md-0 mt-5">
-      <p class="container fw-bold text-success" style="font-size: 13px; ">HELPING COMMUNITIES • CREATING HOPE</p>
+      <p class="container fw-bold " style="font-size: 13px; color:#3d9722;">HELPING COMMUNITIES • CREATING HOPE</p>
       <h1 class="container fw-bold" style="font-size: 72px; margin-top: 22px; line-height: 65px;">Together, We Can <span
-          class="text-success">Give Hope</span> to Those in Need.</h1>
+          class="" style="color:#3d9722;">Give Hope</span> to Those in Need.</h1>
       <p class="container text-secondary" style="font-size: 18px; margin-bottom: 34px;">We work to support vulnerable
         families, provide education and healthcare, distribute essential food supplies, and bring hope to communities
         facing difficult times.</p>
-      <button id="DONATE" class="btn btn-success text-white fw-bold" style="padding: 5px 20px; font-size: 20px;">DONATE
+      <button id="DONATE" class="btn text-white fw-bold" style="background-color:#3d9722; padding: 5px 20px; font-size: 20px;">DONATE
         NOW →</button>
       <button id="BECOME" class="btn btn-outline-secondary fw-bold"
-        style="color:green; font-size: 25px; margin-left: 15px; box-shadow: 0px 0px 5px -1px gray; border: none; padding: 5px 20px;">BECOME
+        style="color:#3d9722; font-size: 25px; margin-left: 15px; box-shadow: 0px 0px 5px -1px gray; border: none; padding: 5px 20px;">BECOME
         A VOLUNTEER</button>
     </div>
-    <div class="col-12 col-md-5 order-0 order-md-1"><img src="./images/orphanage-donation.jpg" alt=""
-        class="w-100 h-100 rounded-3"></div>
+    <div class=" col-12 col-md-5 order-0 order-md-1"><img src="./images/orphanage-donation.jpg" alt=""
+        class="rounded-3"  style="box-shadow: 0px 3px 15px -1px black; width: 526px; height: 480px;">
+      <div class="people">
+        
+      </div>
+      </div>
   </div>
 
   <div class="container-fluid">
     <div class="container text-center" style="margin-top: 150px;">
-      <div class="h2 mt-5 fw-bold" style="font-size: 48px;">Live <span class="text-success">Appeals</span></div>
+      <div class="h2 mt-5 fw-bold" style="font-size: 48px;">Live <span style="color: #3d9722;">Appeals</span></div>
       <div class="h3 mt-2 mb-5 text-secondary" style="font-size: 18px;">Your support can bring hope, relief, and
         opportunity to people in need.</div>
     </div>
@@ -105,7 +218,7 @@
           <h5 class="card-title fw-bold">Food & Ration</h5>
           <p class="card-text text-secondary">Help provide essential food packages to families facing hunger and
             financial hardship.</p>
-          <a href="#" class="btn text-success fw-bold">Donate Now →</a>
+          <a href="#" class="btn fw-bold" style="color: #3d9722;">Donate Now →</a>
         </div>
       </div>
       <div class="card m-3" style="width: 18rem;">
@@ -114,7 +227,7 @@
           <h5 class="card-title fw-bold">Education for All</h5>
           <p class="card-text text-secondary">Support deserving children with books, school supplies, fees, and
             educational opportunities.</p>
-          <a href="#" class="btn text-success fw-bold">Support Education →</a>
+          <a href="#" class="btn fw-bold" style="color: #3d9722;">Support Education →</a>
         </div>
       </div>
       <div class="card m-3" style="width: 18rem;">
@@ -123,7 +236,7 @@
           <h5 class="card-title fw-bold">Medical Assistance</h5>
           <p class="card-text text-secondary">Help families access essential medical treatment, medicines, and
             healthcare services.</p>
-          <a href="#" class="btn text-success fw-bold">Donate for Healthcare →</a>
+          <a href="#" class="btn fw-bold" style="color: #3d9722;">Donate for Healthcare →</a>
         </div>
       </div>
       <div class="card m-3" style="width: 18rem;">
@@ -132,7 +245,7 @@
           <h5 class="card-title fw-bold">Support a Family</h5>
           <p class="card-text text-secondary">Your contribution can help vulnerable families meet their basic daily
             needs with dignity.</p>
-          <a href="#" class="btn text-success fw-bold">Help a Family →</a>
+          <a href="#" class="btn fw-bold" style="color: #3d9722;">Help a Family →</a>
         </div>
       </div>
     </div>
@@ -140,10 +253,10 @@
   <div class="container-fluid" style="margin-top: 100px;">
     <div class="container-fluid d-flex">
       <div class="container" style="height: 70vh;">
-        <div class="p mb-5 fw-bold text-success w-25 rounded-5"
-          style="font-size: 13px; background-color: rgb(216, 255, 216, 0.8); padding: 5px 10px 5px ;">Who We Are</div>
-        <div class="h2 pb-5 fw-bold " style="font-size: 48px;">Building <span class="text-success">better</span>, more
-          <span class="text-success">hopeful</span> lives together.
+        <div class="p mb-5 fw-bold w-25 rounded-5"
+          style="font-size: 13px; color: #3d9722; background-color: rgb(216, 255, 216, 0.8); padding: 5px 10px 5px ;">Who We Are</div>
+        <div class="h2 pb-5 fw-bold " style="font-size: 48px;">Building <span style="color: #3d9722;">better</span>, more
+          <span style="color: #3d9722;">hopeful</span> lives together.
         </div>
         <div class="p pb-5 ">
           Umeed Welfare Trust is a community-focused organization dedicated to helping vulnerable and underprivileged
@@ -161,34 +274,34 @@
     <h2>
       Making a Difference Together
     </h2>
-    <p>Every contribution helps us support people and communities facing difficult times.</p>
+    <p style="color: rgb(193, 193, 193); " class="fw-medium">Every contribution helps us support people and communities facing difficult times.</p>
 
 
     <!-- Making a Difference Together -->
     <div class="container d-flex mb-5 text-center">
       <div id="Families" class="container pt-4 pb-3 rounded-5" style="box-shadow: 0px 0px 6px -2px black; width: 20%">
-        <h3 class=" fw-bold text-success">10,000+</h3>
+        <h3 class=" fw-bold" style="color: black;">10,000+</h3>
         <p>Families Supported</p>
       </div>
       <div id="Families" class="container pt-4 pb-3 rounded-5" style="box-shadow: 0px 0px 6px -3px black;  width: 20%">
-        <h3 class=" fw-bold text-success">5,000+
+        <h3 class=" fw-bold " style="color: black;">5,000+
         </h3>
         <p>Food Packages</p>
       </div>
       <div id="Families" class="container pt-4 pb-3 rounded-5" style="box-shadow: 0px 0px 6px -2px black; width: 20%">
-        <h3 class=" fw-bold text-success">2,000+
+        <h3 class=" fw-bold" style="color: black;">2,000+
         </h3>
         <p>Students Supported</p>
       </div>
       <div id="Families" class="container pt-4 pb-3 rounded-5" style="box-shadow: 0px 0px 6px -2px black; width: 20%">
-        <h3 class=" fw-bold text-success">1,000+</h3>
+        <h3 class=" fw-bold" style="color: black;">1,000+</h3>
         <p>Medical Assistance Cases</p>
       </div>
     </div>
   </div>
     <div class="container-fluid">
       <div class="container text-center" style="margin-top: 150px;">
-      <div class="h2 mt-5 fw-bold" style="font-size: 48px;">What We Are  <span class="text-success">Doing</span></div>
+      <div class="h2 mt-5 fw-bold" style="font-size: 48px;">What We Are  <span style="color: #3d9722;">Doing</span></div>
       <div class="h3 mt-2 mb-5 text-secondary" style="font-size: 18px;">
         <p>Our organization has a long tradition of serving humanity and empowering the underprivileged. We are committed to making a tangible difference in the lives of those in need.</p>
       </div>
@@ -234,8 +347,8 @@
 
     <div class="container-fluid">
       <div class="container text-center" style="margin-top: 150px;">
-        <p class="container fw-bold text-success" style="font-size: 13px; ">our testimonials</p>
-      <div class="h2 mt-3 fw-bold" style="font-size: 48px;">What They <span class="text-success">Say?</span></div>
+        <p class="container fw-bold" style="font-size: 13px; color: #3d9722;">our testimonials</p>
+      <div class="h2 mt-3 fw-bold" style="font-size: 48px;">What They <span style="color: #3d9722;">Say?</span></div>
       <div class="h3 mt-2 mb-5 text-secondary" style="font-size: 18px;">Making a difference in the lives of thousands every day through comprehensive welfare programs</div>
     </div>
     <div class="container-fluid">
@@ -259,8 +372,8 @@
 
     <div class="container-fluid mb-5">
       <div class="container text-center" style="margin-top: 150px;">
-        <p class="container fw-bold text-success" style="font-size: 13px;">LATEST BLOGS</p>
-      <div class="h2 mt-3 fw-bold" style="font-size: 48px;">Our <span class="text-success">Blogs</span></div>
+        <p class="container fw-bold" style="font-size: 13px; color: #3d9722;">LATEST BLOGS</p>
+      <div class="h2 mt-3 fw-bold" style="font-size: 48px;">Our <span style="color: #3d9722;">Blogs</span></div>
       <div class="h3 mt-2 mb-5 text-secondary" style="font-size: 18px;">Stay updated with insights, stories, and news from our welfare initiatives</div>
     </div>
     <div class="container-fluid">
@@ -321,8 +434,8 @@
     </div>
         <div class="container-fluid mb-5">
       <div class="container text-center" style="margin-top: 150px;">
-        <p class="container fw-bold text-success" style="font-size: 13px;">LATEST BLOGS</p>
-      <div class="h2 mt-3 fw-bold" style="font-size: 48px;">Our <span class="text-success">Blogs</span></div>
+        <p class="container fw-bold" style="font-size: 13px; color: #3d9722;">LATEST BLOGS</p>
+      <div class="h2 mt-3 fw-bold" style="font-size: 48px;">Our <span style="color: #3d9722;">Blogs</span></div>
       <div class="h3 mt-2 mb-5 text-secondary" style="font-size: 18px;">Stay updated with insights, stories, and news from our welfare initiatives</div>
     </div>
     <div class="container-fluid">
@@ -383,8 +496,8 @@
     </div>
         <div class="container-fluid mb-5">
       <div class="container text-center" style="margin-top: 150px;">
-        <p class="container fw-bold text-success" style="font-size: 13px;">LATEST BLOGS</p>
-      <div class="h2 mt-3 fw-bold" style="font-size: 48px;">Our <span class="text-success">Blogs</span></div>
+        <p class="container fw-bold" style="font-size: 13px; color: #3d9722;">LATEST BLOGS</p>
+      <div class="h2 mt-3 fw-bold" style="font-size: 48px;">Our <span style="color: #3d9722;">Blogs</span></div>
       <div class="h3 mt-2 mb-5 text-secondary" style="font-size: 18px;">Stay updated with insights, stories, and news from our welfare initiatives</div>
     </div>
     <div class="container-fluid">
@@ -443,16 +556,64 @@
       </div>
     </div>
     </div>
-    <div class="container-fluid text-center pt-5" style="background-color: #3d9722;">
-      <div class="h2 text-white fw-bold fs-1">
+    <div class="container-fluid text-center pt-5 pb-5  mt-5" style="background-color: #3d9722;">
+      <div class="h2 text-white fw-bold fs-1 mt-5">
         Subscribe Our Newsletter
       </div>
       <div class="p" style="color: rgb(228, 228, 228);">
         Our organization has a long tradition of serving humanity and empowering the underprivileged.
       </div>
-      <input type="email" placeholder="Type your email">
-      .
+      <form action="" >
+        <input type="email" placeholder="Type your email" class="border-0 mt-5" style="background-color: #3d9722;">
+      <button class="btn btn-light ps-4 pe-4 pt-2 pb-2 rounded-5 fw-bold " style="color: #3d9722;">Subscribe</button> 
+      <hr style="border: white 1px solid; height: 1px; width: 90%; margin-left: 60px;">
+      </form>
     </div>
+    </div>
+
+    <footer class="p-5 bg-black text-white" style="">
+      <div class="container row">
+        <div class="col-3">
+          <img src="" alt="logo">
+          <p>Saylani Welfare International Trust is dedicated to uplifting the impoverished through comprehensive support services including food, health, and education.</p>
+        </div>
+        <div class="col-3">
+          <ul class="footer-list">
+            <li><span id="footer-span">Page</span></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Media</a></li>
+            <li><a href="#">Contect Us</a></li>
+            <li><a href="#">Bank Details</a></li>
+            <li><a href="Doner Dashboard.html">Doner Login Account</a></li>
+          </ul>
+
+        </div>
+        <div class="col-3">
+          <ul class="footer-list">
+            <li><span id="footer-span">Donation Categories</span></li>
+            <li>Sadqa e Jariah</li>
+            <li>Sadqa / Aqiqah Animal</li>
+            <li>Food Donation</li>
+            <li>Education</li>
+            <li>Medical & Healthcare</li>
+            <!-- <li>Doner Login Account</li> -->
+          </ul>
+
+        </div>
+        <div class="col-3">
+          <ul class="footer-list">
+            <li><span id="footer-span">Page</span></li>
+            <li>Home</li>
+            <li>About</li>
+            <li>Media</li>
+            <li>Contect Us</li>
+            <li>Bank Details</li>
+            <li>Doner Login Account</li>
+          </ul>
+
+      </div>
+    </footer>
   <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 

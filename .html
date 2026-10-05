@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Donor Dashboard</title>
+
+  <!-- Bootstrap 5.3 only -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="container min-vh-100 d-flex flex-column align-items-center">
+
+    <!-- Heading -->
+    <h1 class="fs-1 fw-bold text-center mt-5 mb-4">
+      Donor Dashboard
+    </h1>
+
+    <!-- Navigation Tabs -->
+    <ul class="nav nav-tabs mb-2" id="donor" >
+      <li class="nav-item" >
+        <button class="nav-link active" id="login-tab"
+                data-bs-toggle="tab" data-bs-target="#login"
+                type="button" >
+          Login
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="register-tab"
+                data-bs-toggle="tab" data-bs-target="#register"
+                type="button" role="tab">
+          Register
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="forgot-tab"
+                data-bs-toggle="tab" data-bs-target="#forgot"
+                type="button" role="tab">
+          Forgot Password?
+        </button>
+      </li>
+    </ul>
+
+    <!-- Tab Content -->
+    <div class="tab-content w-100" style="max-width: 515px;">
+
+      <!-- Login -->
+      <div class="tab-pane fade show active" id="login" role="tabpanel">
+
+        <div class="card rounded-4 shadow-sm">
+          <div class="card-body p-4">
+
+            <h5 class="fw-bold mb-1">Login</h5>
+            <p class="text-secondary mb-4">
+              Enter your email and password to sign in to your account.
+            </p>
+
+            <form onsubmit="return false;">
+
+              <div class="mb-3">
+                <label for="loginEmail" class="form-label">Email</label>
+                <input type="email" class="form-control"
+                       id="loginEmail"
+                       placeholder="donor@example.com"
+                       required>
+              </div>
+
+              <div class="mb-4">
+                <label for="loginPassword" class="form-label">Password</label>
+                <input type="password" class="form-control"
+                       id="loginPassword"
+                       placeholder="Enter your password"
+                       required>
+              </div>
+
+              <button type="submit" class="btn btn-success w-100">
+                Login
+              </button>
+
+            </form>
+
+            <div class="alert alert-light border mt-3 mb-0 d-flex gap-2 align-items-start">
+              <span class="fw-bold">ⓘ</span>
+              <small class="text-secondary">
+                Your donation history is linked to your email address.
+                Please use the same email consistently to keep all your
+                donation records in one place.
+              </small>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Register -->
+      <div class="tab-pane fade" id="register" role="tabpanel">
+
+        <div class="card rounded-4 shadow-sm">
+          <div class="card-body p-4">
+
+            <h5 class="fw-bold mb-1">Create Account</h5>
+            <p class="text-secondary mb-4">
+              Register as a donor to manage your donation history.
+            </p>
+
+            <form onsubmit="return false;">
+
+              <div class="mb-3">
+                <label class="form-label">Full Name</label>
+                <input type="text" class="form-control"
+                       placeholder="Enter your full name" required>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control"
+                       placeholder="donor@example.com" required>
+              </div>
+
+              <div class="mb-4">
+                <label class="form-label">Password</label>
+                <input type="password" class="form-control"
+                       placeholder="Create a password" required>
+              </div>
+
+              <button type="submit" class="btn btn-success w-100">
+                Register
+              </button>
+
+            </form>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Forgot Password -->
+      <div class="tab-pane fade" id="forgot" role="tabpanel">
+
+        <div class="card rounded-4 shadow-sm">
+          <div class="card-body p-4">
+
+            <h5 class="fw-bold mb-1">Forgot Password?</h5>
+            <p class="text-secondary mb-4">
+              Enter your email and we'll help you reset your password.
+            </p>
+
+            <form onsubmit="return false;">
+
+              <div class="mb-4">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control"
+                       placeholder="donor@example.com" required>
+              </div>
+
+              <button type="submit" class="btn btn-success w-100">
+                Send Reset Link
+              </button>
+
+            </form>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Bootstrap JavaScript -->
+  <script src="js/bootstrap.min.js"></script>
+
+</body>

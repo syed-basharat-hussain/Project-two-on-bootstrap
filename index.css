@@ -12,3 +12,18 @@
 .carousel-inner img{
     height: 80vh;
 }
+ul{
+    list-style-type: none;
+}
+li{
+    font-size: 14px;
+}
+
+#footer-span{
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+.footer-list{
+    color: rgb(199, 199, 199);
+}
